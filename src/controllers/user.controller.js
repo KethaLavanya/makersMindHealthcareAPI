@@ -1,6 +1,6 @@
 import User from "../models/user.model.js";
 import bcrypt from "bcrypt";
-import { handleError, handleSuccess } from "../utils/responseHandle.js";
+import { handleError, handleAccess } from "../utils/responseHandle.js";
 import createJwtToken from "../middlewares/authMiddlewares.js";
 import asyncHandler from "../utils/asyncHandle.js";
 import { MongoCryptKMSRequestNetworkTimeoutError } from "mongodb";

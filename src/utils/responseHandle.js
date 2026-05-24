@@ -1,4 +1,4 @@
-const handleSuccess = (res, message, statusCode, data = null) => {
+const handleAccess = (res, message, statusCode, data = null) => {
   return res.status(statusCode).json({
     message,
     success: true,
@@ -6,7 +6,8 @@ const handleSuccess = (res, message, statusCode, data = null) => {
     data,
   });
 };
-const handleError = (res, message, statusCode = 500, data = null) => {
+
+const handleError = (res, message, statusCode = 500) => {
   return res.status(statusCode).json({
     message,
     success: false,
@@ -14,4 +15,5 @@ const handleError = (res, message, statusCode = 500, data = null) => {
     data,
   });
 };
-export { handleSuccess, handleError };
+
+export { handleAccess, handleError };

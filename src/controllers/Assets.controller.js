@@ -1,6 +1,6 @@
 import { get } from "mongoose";
 import Assets from "../models/Assets.model.js";
-import { handleError, handleSuccess } from "../utils/responseHandle.js";
+import { handleError, handleAccess } from "../utils/responseHandle.js";
 const createAssets = async (req, res) => {
   try {
     const {

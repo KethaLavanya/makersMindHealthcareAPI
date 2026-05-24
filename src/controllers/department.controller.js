@@ -1,6 +1,6 @@
 import { get } from "mongoose";
 import Department from "../models/Department.model.js";
-import { handleError, handleSuccess } from "../utils/responseHandle.js";
+import { handleError, handleAccess } from "../utils/responseHandle.js";
 const createDepartment = async (req, res) => {
   try {
     const { DepartmentName, Description } = req.body;

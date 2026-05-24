@@ -14,6 +14,10 @@ import router from "./routes/expense.routes.js";
 import routerSalary from "./routes/salary.routes.js";
 import routerincome from "./routes/income.routes.js";
 import routercategory from "./routes/category.routes.js";
+import blogRoutes from "./routes/blog.routes.js";
+import holidayRoutes from "./routes/holiday.routes.js";
+import employeeRoutes from "./routes/employee.routes.js";
+import leaveRoutes from "./routes/leave.routes.js";
 const app = express();
 app.use(express.json());
 app.use(
@@ -35,4 +39,16 @@ app.use("/api/expense", router);
 app.use("/api/salary", routerSalary);
 app.use("/api/income", routerincome);
 app.use("/api/category", routercategory);
+app.use("/api", patientRoutes);
+app.use("/api", blogRoutes);
+app.use("/api/holiday", holidayRoutes);
+app.use("/api/employee", employeeRoutes);
+app.use("/api/leave", leaveRoutes);
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+
+    message: "Server running successfully",
+  });
+});
 export default app;
