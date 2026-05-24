@@ -1,5 +1,5 @@
 import Salary from "../models/salary.models.js";
-import { handleSuccess, handleError } from "../utils/responseHandle.js";
+import { handleAccess, handleError } from "../utils/responseHandle.js";
 
 // createSalary
 const createSalary = async (req, res) => {

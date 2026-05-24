@@ -1,6 +1,6 @@
 import { get } from "mongoose";
 import Appointment from "../models/Appointment.model.js";
-import { handleError, handleSuccess } from "../utils/responseHandle.js";
+import { handleError, handleAccess } from "../utils/responseHandle.js";
 const createAppointment = async (req, res) => {
   try {
     const {

@@ -1,5 +1,5 @@
 import Staff from "../models/staff.model.js";
-import { handleError, handleSuccess } from "../utils/responseHandle.js";
+import { handleError, handleAccess } from "../utils/responseHandle.js";
 
 // create staff
 const createStaff = async (req, res) => {

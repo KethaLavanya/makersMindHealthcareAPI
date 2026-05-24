@@ -1,5 +1,5 @@
 import Income from "../models/income.models.js";
-import { handleSuccess, handleError } from "../utils/responseHandle.js";
+import { handleAccess, handleError } from "../utils/responseHandle.js";
 
 // createincome
 const createIncome = async (req, res) => {

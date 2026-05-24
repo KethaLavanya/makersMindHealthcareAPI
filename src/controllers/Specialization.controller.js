@@ -1,6 +1,6 @@
 import { get } from "mongoose";
 import Special from "../models/Specialization.model.js";
-import { handleError, handleSuccess } from "../utils/responseHandle.js";
+import { handleError, handleAccess } from "../utils/responseHandle.js";
 const createSpecialization = async (req, res) => {
   try {
     const { Specialization, Description } = req.body;

@@ -1,6 +1,6 @@
 import { get } from "mongoose";
 import Designation from "../models/Designation.model.js";
-import { handleError, handleSuccess } from "../utils/responseHandle.js";
+import { handleError, handleAccess } from "../utils/responseHandle.js";
 
 const createDesignation = async (req, res) => {
   try {

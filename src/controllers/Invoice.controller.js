@@ -1,6 +1,6 @@
 import { get } from "mongoose";
 import Invoice from "../models/Invoice.model.js";
-import { handleError, handleSuccess } from "../utils/responseHandle.js";
+import { handleError, handleAccess } from "../utils/responseHandle.js";
 const createInvoice = async (req, res) => {
   try {
     const {

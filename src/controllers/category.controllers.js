@@ -1,5 +1,5 @@
 import Category from "../models/category.models.js";
-import { handleSuccess, handleError } from "../utils/responseHandle.js";
+import { handleAccess, handleError } from "../utils/responseHandle.js";
 
 // Create Category
 const createCategory = async (req, res) => {
